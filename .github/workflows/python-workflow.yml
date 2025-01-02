@@ -6,7 +6,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    - name: Checkout code
+      uses: actions/checkout@v4
     steps:
     - name: Set up Python 3.11
       uses: actions/setup-python@v5
